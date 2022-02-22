@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "44B0264513F5D44000541EA5"
-               BuildableName = "Test BLE App.app"
+               BuildableName = "TestBLEApp.app"
                BlueprintName = "TestBLEApp"
                ReferencedContainer = "container:TestBLEApp.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "44B0264513F5D44000541EA5"
-            BuildableName = "Test BLE App.app"
+            BuildableName = "TestBLEApp.app"
             BlueprintName = "TestBLEApp"
             ReferencedContainer = "container:TestBLEApp.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "44B0264513F5D44000541EA5"
-            BuildableName = "Test BLE App.app"
+            BuildableName = "TestBLEApp.app"
             BlueprintName = "TestBLEApp"
             ReferencedContainer = "container:TestBLEApp.xcodeproj">
          </BuildableReference>

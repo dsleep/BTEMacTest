@@ -258,7 +258,12 @@
  */
 - (void) startScan 
 {
-    [manager scanForPeripheralsWithServices:nil options:nil];
+    //retrievePeripherals
+    
+    //366DEE95-85A3-41C1-A507-8C3E02342000
+//    NSUUID *nsUUID = [[NSUUID UUID] initWithUUIDString:@"366DEE95-85A3-41C1-A507-8C3E02342000"];
+    CBUUID *cbUUID = [CBUUID UUIDWithString:@"366DEE95-85A3-41C1-A507-8C3E02342000"];
+    [manager scanForPeripheralsWithServices:@[cbUUID] options:nil ];
 }
 
 /*
@@ -283,7 +288,7 @@
  */
 - (void) centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)aPeripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI 
 {
-    NSLog(@"Found peripheral: %@ (%@)", aPeripheral.name, aPeripheral.identifier.UUIDString);
+    NSLog(@"Found peripheral: %@ (%@)(%@)", aPeripheral.name, aPeripheral.identifier.UUIDString, aPeripheral.identifier.description);
        
     NSMutableArray *peripherals = [self mutableArrayValueForKey:@"heartRateMonitors"];
     if( ![self.heartRateMonitors containsObject:aPeripheral] )
